@@ -1,0 +1,145 @@
+/* This is the general styles for all elements */
+* {
+  margin: 0 ;
+  padding: 0 ;
+  box-sizing: border-box;
+}
+
+.modal {
+    display: block;
+    position: fixed;
+    transform: translateY(30%);
+}
+
+#modal:target {
+    display: none;
+}
+.modal-open {
+     filter: blur(100px); /* This will blur the background */
+    transition: filter 0.3s ease-in-out; /* Smooth transition for the blur effect */
+        }
+
+
+/* Styles for the page scroll bar */
+::-webkit-scrollbar  {
+    border: 1px solid black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(6, 6, 24);  /* Blue color for the thumb */
+  border-radius: 10px;         /* Round the thumb */
+}
+
+/* The container that wraps around the whole page */
+.box {
+    width: 96%;
+    margin: auto;
+}
+
+/* The scrollable gallery of games styling; */
+.scroll small { margin: 0; padding: 0; font-weight: bold; color: white; font-size: smaller;}
+.scroll p { margin: 0; padding: 0; font-weight: bold; color: rgb(255, 136, 0); font-size: smaller;}
+h4 { margin: 0; padding: 0; font-weight: bold; font-size: 1.2rem;}
+
+/* The container that wraps around each game in the hall of fame gallery */
+.wrapper {
+    text-align: center;
+    padding: .4rem;
+    border: none;
+    background-color: rgb(22, 22, 22);
+}
+
+/* The container that wraps around everything on the hall of fame gallery */
+.scroll {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    background-color: rgb(46, 44, 44);
+}
+
+/* The hall of fame gallery scroll bar */
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* The style of the images in the hall of fame game gallery */
+.img-container {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+
+}
+.img-container img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.3s;
+}
+.img-container > img:hover {
+    transform: scale(1.1);
+}
+
+/* The meta win hero section */
+.meta-win img{
+    width: 100%;
+    object-fit: cover;
+}
+/* Payment icons */
+.icons img {
+    height: 40px;
+}
+/* Making the right grid image to have rounded corners */
+.rounded-wf {
+    border-radius: 10px;
+}
+/* Styles for the table */
+table img {
+    width: 35px;
+    border-radius: 5px;
+}
+td {
+    vertical-align: middle;
+}
+.table td:last-child {
+  text-align: right;
+}
+
+.table td:nth-child(3) {
+    color: rgb(46, 233, 46);
+    font-weight: bold;
+}
+
+/* Footer styling */
+footer li, small {
+    color: rgb(44, 62, 110);
+    font-size: 14px;
+    cursor: pointer;
+}
+footer li:hover {
+    color: white;
+}
+
+/* Style for the bootstrap offcanvas */
+.offcanvas {
+    background-color: rgb(15, 15, 15);
+}
+
+/* Styles for the bootstrap accordion */
+.accordion-button, .accordion-button:not(.collapsed) {
+  background-color: rgb(3, 3, 17);/* Change button background */
+  color: white; /* Change button text color */
+  border-radius: 8px; /* Rounded corners */
+  border: none; /* Remove the border */
+  font-weight: bold; /* Bold text */
+  padding: 7px; /* Padding around the button */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+.accordion-body {
+    background-color: rgb(165, 165, 201);
+}
+
+/* Font awesome icons */
+i:hover {
+    color: white;
+}
