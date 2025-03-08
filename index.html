@@ -2,33 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="meta.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="meta.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link href="bootstrap-aid/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Metawin Site</title>
   </head>
-  <body class="bg-dark">
-        
-    <div id="modal" class="modal">
-        <div class="modal-content">
-          <a href="#modal" class="btn btn-close"></a>
-          <h2>Welcome to Our Website!</h2>
-            <p>This is a modal that appears when you visit the site.</p>
-        </div>
+  <body class="bg-dark sleek">
+    <div class="loader-container">
+      <div class="loader"></div>
+      <div class="loader-text">
+        Please wait, we're preparing something great for you!
+      </div>
     </div>
-    <header class="box">
+    <header>
       <nav
         class="navbar d-flex align-item-center justify-content-between fixed-top top-0 shadow-lg"
         style="background-color: black"
       >
         <div class="d-flex gap-3 align-item-center">
           <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#off">
-            <i class="fas fa-bars" style="color: rgb(77, 74, 74); font-size: 25px;"></i>
+            <i
+              class="fas fa-bars"
+              style="color: rgb(77, 74, 74); font-size: 25px"
+            ></i>
           </button>
-          <div class="offcanvas offcanvas-start" id="off">
+          <div class="offcanvas offcanvas-start bg-dark" id="off">
             <div class="offcanvas-header justify-content-end">
-              <button class="btn btn-close text-white" data-bs-dismiss="offcanvas"></button>
+              <button
+                class="btn btn-close text-white"
+                data-bs-dismiss="offcanvas"
+              ></button>
             </div>
             <div class="offcanvas-body">
               <div class="accordion">
@@ -45,9 +52,23 @@
                   <div class="collapse accordion-collapse" id="acc">
                     <div class="accordion-body">
                       <ul class="list-unstyled">
-                        <li><i class="fab fa-discord mx-3 py-2"></i>Discord</li>
-                        <li><i class="fab fa-twitter mx-3 py-2"></i>X / Twitter</li>
-                        <li><i class="fab fa-telegram mx-3 py-2"></i>Telegram</li>
+                        <li>
+                          <a href="" class="text-decoration-none"
+                            ><i class="fab fa-discord mx-3 py-2"></i>Discord</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-decoration-none"
+                            ><i class="fab fa-twitter mx-3 py-2"></i>X /
+                            Twitter</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-decoration-none"
+                            ><i class="fab fa-telegram mx-3 py-2"></i
+                            >Telegram</a
+                          >
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -58,674 +79,753 @@
           <a href="#" class="navbar-brand text-white"><h3>METAWIN</h3></a>
         </div>
         <div class="">
-          <button class="btn-sm btn text-white fw-bold">Sign in</button>
-          <button class="btn-sm btn btn-primary fw-bold">Register</button>
+          <a href="sign-in.html" class="btn-sm btn text-white fw-bold"
+            >Sign In</a
+          >
+          <button
+            class="btn-sm btn btn-primary fw-bold"
+            data-bs-toggle="modal"
+            data-bs-target="#mod"
+          >
+            Click
+          </button>
           <button class="btn-sm btn"><i class="fas fa-comment-alt"></i></button>
         </div>
       </nav>
     </header>
-      <main class="box">
-        <p class="text-white fs-5 fw-normal mb-2" style="margin-top: 70px">
-          Hall of Fame &rarr;
-        </p>
-        <div class="scroll mb-3">
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/meta-millionaire.jpg" alt="" />
-            </div>
-            <small class="">Beznik</small>
-            <p>$1,000,000</p>
+    <div class="modal" id="mod">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header">
+            <h4 class="modal-title">Mission Accomplished!</h4>
+            <button class="btn btn-close text-white" data-bs-dismiss="modal"></button>
           </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sugar-rush-1000-original.png" alt="" />
-            </div>
-            <small>mdubbb</small>
-            <p>$795,788</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/supermania.jpg" alt="" />
-            </div>
-            <small>mjouan</small>
-            <p>$679,275</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sweet-bonanza-1000.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sweet-bonanza-1000.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sugar-rush-1000-original.png" alt="" />
-            </div>
-            <small>mdubbb</small>
-            <p>$795,788</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sweet-bonanza-1000.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/haunted-reels.png" alt="" />
-            </div>
-            <small>mjouan</small>
-            <p>$679,275</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/hot-fiesta.png" alt="" />
-            </div>
-            <small>mjouan</small>
-            <p>$679,275</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/Soccermania.png" alt="" />
-            </div>
-            <small>mjouan</small>
-            <p>$679,275</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sweet-bonanza-1000.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sweet-bonanza-1000.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sweet-bonanza-1000.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/Hand-of-Anubis.png" alt="" />
-            </div>
-            <small>mjouan</small>
-            <p>$679,275</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/voodoo-people.png" alt="" />
-            </div>
-            <small>mjouan</small>
-            <p>$679,275</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/nine-to-five-new.jpg" alt="" />
-            </div>
-            <small>mjouan</small>
-            <p>$679,275</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/gates-of-olympus-1000.jpg" alt="" />
-            </div>
-            <small>mjouan</small>
-            <p>$679,275</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/american-roulette-live.jpg" alt="" />
-            </div>
-            <small>mjouan</small>
-            <p>$679,275</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/wild-wild-riches-min.png" alt="" />
-            </div>
-            <small>mjouan</small>
-            <p>$679,275</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sweet-bonanza-1000.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/eth-150-2.jpg" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sweet-bonanza-1000.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/lightning-roulette.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/xxxtreme-lightning-roulette-live.jpg" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/SummerSizzler.jpeg" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/skate-or-die.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sumo-supreme-megaways.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sweet-bonanza-1000.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sweet-bonanza-1000.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/xxxtreme-lightning-roulette-live.jpg" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/live-casino-thumbnail-500x280.jpg" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sweet-bonanza-1000.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/xxxtreme-lightning-roulette-live.jpg" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sweet-bonanza-1000.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sugar-rush-1000-original.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sugar-rush-1000-original.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/vampy-party.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/san-quentin-2-death-row.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sweet-bonanza-1000.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/plinko-xy.jpg" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/merge-up.jpg" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/plinko-xy.jpg" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sugar-rush-1000-original.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/Soccermania.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sweet-bonanza-1000.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sugar-rush-1000-original.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/release-the-kraken-megaways.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/possessed.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sweet-bonanza-1000.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sweet-bonanza-1000.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sweet-bonanza-1000.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/haunted-reels.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/xxxtreme-lightning-roulette-live.jpg" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/fruit-million-xmas.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sugar-rush-1000-original.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/salon-prive-blackjack-h.jpg" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
-          </div>
-
-          <div class="wrapper rounded">
-            <div class="img-container">
-              <img src="./img/sugar-rush-1000-original.png" alt="" />
-            </div>
-            <small>Beznik</small>
-            <p>$1,000,000</p>
+          <div class="modal-body">
+            <p>
+              "Secret mission complete! Here’s a virtual high-five 🖐🏻 for being
+              awesome!"
+            </p>
+            <p>
+              There are more missions to complete—explore other projects in this
+              portfolio ✨. Let’s work together and create something amazing!🙂
+            </p>
           </div>
         </div>
+      </div>
+    </div>
+    <main class="box">
+      <p class="text-white fs-5 fw-normal mb-2" style="margin-top: 70px">
+        Hall of Fame &rarr;
+      </p>
+      <div class="scroll mb-3">
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/meta-millionaire.jpg" alt="" />
+          </div>
+          <small class="">Beznik</small>
+          <p>$1,000,000</p>
+        </div>
 
-        <section class="meta-win">
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sugar-rush-1000-original.png" alt="" />
+          </div>
+          <small>mdubbb</small>
+          <p>$795,788</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/supermania.jpg" alt="" />
+          </div>
+          <small>mjouan</small>
+          <p>$679,275</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sweet-bonanza-1000.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sweet-bonanza-1000.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sugar-rush-1000-original.png" alt="" />
+          </div>
+          <small>mdubbb</small>
+          <p>$795,788</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sweet-bonanza-1000.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/haunted-reels.png" alt="" />
+          </div>
+          <small>mjouan</small>
+          <p>$679,275</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/hot-fiesta.png" alt="" />
+          </div>
+          <small>mjouan</small>
+          <p>$679,275</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/Soccermania.png" alt="" />
+          </div>
+          <small>mjouan</small>
+          <p>$679,275</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sweet-bonanza-1000.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sweet-bonanza-1000.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sweet-bonanza-1000.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/Hand-of-Anubis.png" alt="" />
+          </div>
+          <small>mjouan</small>
+          <p>$679,275</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/voodoo-people.png" alt="" />
+          </div>
+          <small>mjouan</small>
+          <p>$679,275</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/nine-to-five-new.jpg" alt="" />
+          </div>
+          <small>mjouan</small>
+          <p>$679,275</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/gates-of-olympus-1000.jpg" alt="" />
+          </div>
+          <small>mjouan</small>
+          <p>$679,275</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/american-roulette-live.jpg" alt="" />
+          </div>
+          <small>mjouan</small>
+          <p>$679,275</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/wild-wild-riches-min.png" alt="" />
+          </div>
+          <small>mjouan</small>
+          <p>$679,275</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sweet-bonanza-1000.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/eth-150-2.jpg" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sweet-bonanza-1000.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/lightning-roulette.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/xxxtreme-lightning-roulette-live.jpg" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/SummerSizzler.jpeg" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/skate-or-die.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sumo-supreme-megaways.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sweet-bonanza-1000.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sweet-bonanza-1000.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/xxxtreme-lightning-roulette-live.jpg" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/live-casino-thumbnail-500x280.jpg" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sweet-bonanza-1000.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/xxxtreme-lightning-roulette-live.jpg" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sweet-bonanza-1000.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sugar-rush-1000-original.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sugar-rush-1000-original.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/vampy-party.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/san-quentin-2-death-row.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sweet-bonanza-1000.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/plinko-xy.jpg" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/merge-up.jpg" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/plinko-xy.jpg" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sugar-rush-1000-original.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/Soccermania.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sweet-bonanza-1000.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sugar-rush-1000-original.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/release-the-kraken-megaways.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/possessed.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sweet-bonanza-1000.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sweet-bonanza-1000.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sweet-bonanza-1000.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/haunted-reels.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/xxxtreme-lightning-roulette-live.jpg" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/fruit-million-xmas.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sugar-rush-1000-original.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/salon-prive-blackjack-h.jpg" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+
+        <div class="wrapper rounded">
+          <div class="img-container">
+            <img src="./img/sugar-rush-1000-original.png" alt="" />
+          </div>
+          <small>Beznik</small>
+          <p>$1,000,000</p>
+        </div>
+      </div>
+
+      <section class="meta-win">
+        <img
+          src="./img/millionaire-thin-banner-desktop.01a36b82.png"
+          alt=""
+          class="my-1"
+        />
+      </section>
+      <section class="row row-cols-1 row-cols-md-2 mt-3 p-0 mb-5">
+        <div class="col pe-3">
+          <h4 class="text-white fw-normal mb-2 ms-md-4">
+            <i class="fas fa-fire me-2"></i>Crypto Competitions
+          </h4>
+          <img src="./img/crypto.951d0cf2.png" alt="" class="w-100 mb-3" />
+          <p class="fs-5 text-white fw-normal mb-1">
+            Win Crypto & Blue-chip NFT Prizes
+          </p>
+          <small class="fw-normal text-white"
+            >At MetaWin you can win huge crypto prizes. 'Beznik' won a massive
+            $1 Million USDC. Will you be our next big winner?</small
+          >
+          <button class="btn btn-primary w-100 fw-bold text-capitalise">
+            Enter For Free
+          </button>
+        </div>
+        <div class="col ps-3 mt-md-0 mt-4">
+          <h4 class="text-white fw-normal mb-2 ms-md-4">
+            <i class="fas fa-apple-alt me-2"></i>
+            MetaWin Millionaire Season 2
+          </h4>
           <img
-            src="./img/millionaire-thin-banner-desktop.01a36b82.png"
-            alt="" class="my-1"
+            src="./img/Prize builder.png"
+            alt=""
+            class="w-100 rounded-wf mb-3"
           />
-        </section>
-        <section class="row row-cols-1 row-cols-md-2 mt-3 p-0 mb-5">
-          <div class="col pe-3">
-            <h4 class="text-white fw-normal mb-2 ms-md-4"><i class="fas fa-fire me-2"></i>Crypto Competitions</h4>
-            <img src="./img/crypto.951d0cf2.png" alt="" class="w-100 mb-3" />
-            <p class="fs-5 text-white fw-normal mb-1">
-              Win Crypto & Blue-chip NFT Prizes
-            </p>
-            <small class="fw-normal text-white"
-              >At MetaWin you can win huge crypto prizes. 'Beznik' won a massive
-              $1 Million USDC. Will you be our next big winner?</small
-            >
-            <button class="btn btn-primary w-100 fw-bold text-capitalise">
-              Enter For Free
-            </button>
+          <p class="fs-5 text-white fw-normal mb-1">
+            Current Prizepool: $1,010,522 USDT
+          </p>
+          <small class="fw-normal text-white"
+            >100 winning positions and the prizepool rises on every purchase
+            with a starting seed of $600,000 USDT!</small
+          >
+          <button class="btn btn-primary w-100 fw-bold text-capitalise">
+            Enter now
+          </button>
+        </div>
+      </section>
+
+      <section
+        class="d-md-flex justify-content-between mb-5 align-item-center d-none d-md-block"
+      >
+        <h3 class="text-white">No crypto? No worries!</h3>
+        <div class="d-flex gap-3 align-item-center text-success icons">
+          <img src="./img/third visa.png" alt="Visa" />
+          <img
+            src="./img/pngimg.com - mastercard_PNG15.png"
+            alt="Master-card"
+          />
+          <img src="./img/paypal.png" alt="Apay" />
+          <img src="./img/gpay.png" alt="Google-pay" />
+        </div>
+      </section>
+
+      <section class="table-responsive">
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th style="width: 30%; background-color: black">Game</th>
+              <th style="background-color: black; width: 25%">User</th>
+              <th style="background-color: black">Action</th>
+              <th style="background-color: black">Amount</th>
+              <th style="background-color: black" class="text-end">Time</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                <img src="./img/american-roulette-live.jpg" alt="" />
+                <span class="d-none d-md-inline"
+                  >&nbsp;live-casino-thumbnail-500x280</span
+                >
+              </td>
+              <td>LuckySpinz</td>
+              <td>WIN</td>
+              <td>0.07</td>
+              <td>Now</td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="./img/sweet-bonanza-1000.png" alt="" />
+                <span class="d-none d-md-inline">&nbsp; skate-or-die</span>
+              </td>
+              <td>JackpotJester</td>
+              <td>WIN</td>
+              <td>0.07</td>
+              <td>Now</td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="./img/lightning-roulette.png" alt="" />
+                <span class="d-none d-md-inline"
+                  >&nbsp;salon-prive-blackjack-h</span
+                >
+              </td>
+              <td>AceOfAces</td>
+              <td>WIN</td>
+              <td>7.2</td>
+              <td>Now</td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="./img/hot-fiesta.png" alt="" />
+                <span class="d-none d-md-inline">&nbsp;nine-to-five-new</span>
+              </td>
+              <td>HighRollerX</td>
+              <td>WIN</td>
+              <td>0.000000102</td>
+              <td>1 seconds ago</td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="./img/haunted-reels.png" alt="" />
+                <span class="d-none d-md-inline">&nbsp;sweet-bonanza-1000</span>
+              </td>
+              <td>CasinoKnight</td>
+              <td>WIN</td>
+              <td>0.02563</td>
+              <td>1 seconds ago</td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="./img/Hand-of-Anubis.png" alt="" />
+                <span class="d-none d-md-inline">&nbsp;haunted-reels</span>
+              </td>
+              <td>RoyalFlushRuler</td>
+              <td>WIN</td>
+              <td>&#8952;0.07</td>
+              <td>1 seconds ago</td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="./img/possessed.png" alt="" />
+                <span class="d-none d-md-inline"
+                  >&nbsp;xxxtreme-lightning-roulette-live</span
+                >
+              </td>
+              <td>BetMasterFlex</td>
+              <td>WIN</td>
+              <td>0.01</td>
+              <td>1 seconds ago</td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="./img/gates-of-olympus-1000.jpg" alt="" />
+                <span class="d-none d-md-inline"
+                  >&nbsp;sugar-rush-1000-original</span
+                >
+              </td>
+              <td>PokerAce88</td>
+              <td>WIN</td>
+              <td>0.000000097</td>
+              <td>1 minute ago</td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="./img/fruit-million-xmas.png" alt="" />
+                <span class="d-none d-md-inline">&nbsp;hot-fiesta</span>
+              </td>
+              <td>SpinKing777</td>
+              <td>WIN</td>
+              <td>0.035</td>
+              <td>1 minute ago</td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="./img/plinko-xy.jpg" alt="" />
+                <span class="d-none d-md-inline">&nbsp;Arinze Ubozoh</span>
+              </td>
+              <td>BlackjackBaller</td>
+              <td>WIN</td>
+              <td>0.07</td>
+              <td>1 minute ago</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <footer class="row row-cols-1 row-cols-md-4 mb-3 mt-5">
+        <div class="col text-white text-center">
+          <ul class="list-unstyled">
+            <li class="h3 fs-5 text-white">METAWIN</li>
+            <li>Copyright © 2024 MetaWin</li>
+            <li>Patent pending</li>
+          </ul>
+        </div>
+        <div class="col text-white text-center">
+          <ul class="list-unstyled">
+            <li class="h4 fs-5 text-white">About us</li>
+            <li>Privacy Policy</li>
+            <li>Cookie Policy</li>
+            <li>Terms and Conditions</li>
+            <li>Sports Terms and Conditions</li>
+          </ul>
+        </div>
+        <div class="col text-white text-center">
+          <ul class="list-unstyled">
+            <li class="h4 fs-5 text-white">Gaming</li>
+            <li>Underage Gaming Policy</li>
+            <li>Self-Exclusion Policy</li>
+            <li>Responsible Gambling</li>
+            <li>KYC Policy</li>
+          </ul>
+        </div>
+        <div class="col text-white text-center">
+          <ul class="list-unstyled">
+            <li class="h4 text-white">Join our Web3 community</li>
+            <li class="text-white">
+              <i class="fab fa-discord fa-2x me-2"></i>
+              <i class="fab fa-twitter fa-2x me-2"></i>
+              <i class="fab fa-instagram fa-2x me-2"></i>
+              <i class="fab fa-telegram fa-2x me-2"></i>
+            </li>
+          </ul>
+          <small
+            >Metawin.com is owned and operated by Asobi N.V. , ABRAHAM DE
+            VEERSTRAAT 9, WILLEMSTAD, CURACAO and is licensed and regulated by
+            the Government of the Autonomous Island of Anjouan, Union of Comoros
+            and operates under license No. ALSI-1523 12009-FI3. Metawin.com has
+            passed all regulatory compliance and is legally authorized to
+            conduct gaming operations for any and all games of chance and
+            wagering. (company number 153109). Zoom Net Services Ltd, a company
+            incorporated in Cyprus (Registration No.HE 410498), provides payment
+            services under an agreement with Asobi N.V.
+          </small>
+          <div class="d-flex justify-content-end">
+            <img class="h-50" src="./img/18+.png" alt="" />
+            <img style="width: 35px" src="./img/tick-twai.png" alt="" />
           </div>
-          <div class="col ps-3 mt-md-0 mt-4">
-            <h4 class="text-white fw-normal mb-2 ms-md-4"><i class="fas fa-apple-alt me-2"></i>
-              MetaWin Millionaire Season 2
-            </h4>
-            <img
-              src="./img/Prize builder.png"
-              alt=""
-              class="w-100 rounded-wf mb-3"
-            />
-            <p class="fs-5 text-white fw-normal mb-1">
-              Current Prizepool: $1,010,522 USDT
-            </p>
-            <small class="fw-normal text-white"
-              >100 winning positions and the prizepool rises on every purchase
-              with a starting seed of $600,000 USDT!</small
-            >
-            <button class="btn btn-primary w-100 fw-bold text-capitalise">
-              Enter now
-            </button>
-          </div>
-        </section>
-
-        <section class="d-md-flex justify-content-between mb-5 align-item-center d-none d-md-block">
-          <h3 class="text-white">No crypto? No worries!</h3>
-          <div class="d-flex gap-3 align-item-center text-success icons">
-            <img src="./img/third visa.png" alt="Visa" />
-            <img src="./img/pngimg.com - mastercard_PNG15.png" alt="Master-card" />
-            <img src="./img/paypal.png" alt="Apay" />
-            <img src="./img/gpay.png" alt="Google-pay" />
-          </div>
-        </section>
-
-        <section class="table-responsive">
-          <table class="table table-dark">
-            <thead>
-              <tr>
-                <th style="width: 30%; background-color: black">Game</th>
-                <th style="background-color: black; width: 25%">User</th>
-                <th style="background-color: black">Action</th>
-                <th style="background-color: black">Amount</th>
-                <th style="background-color: black" class="text-end">Time</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td><img src="./img/american-roulette-live.jpg" alt="" /> <span class="d-none d-md-inline">&nbsp;live-casino-thumbnail-500x280</span></td>
-                <td>LuckySpinz</td>
-                <td>WIN</td>
-                <td>0.07</td>
-                <td>Now</td>
-              </tr>
-
-              <tr>
-                <td><img src="./img/sweet-bonanza-1000.png" alt="" /> <span class="d-none d-md-inline">&nbsp; skate-or-die</span></td>
-                <td>JackpotJester</td>
-                <td>WIN</td>
-                <td>0.07</td>
-                <td>Now</td>
-              </tr>
-
-              <tr>
-                <td><img src="./img/lightning-roulette.png" alt="" /> <span class="d-none d-md-inline">&nbsp;salon-prive-blackjack-h</span></td>
-                <td>AceOfAces</td>
-                <td>WIN</td>
-                <td>7.2</td>
-                <td>Now</td>
-              </tr>
-
-              <tr>
-                <td><img src="./img/hot-fiesta.png" alt="" /> <span class="d-none d-md-inline">&nbsp;nine-to-five-new</span></td>
-                <td>HighRollerX</td>
-                <td>WIN</td>
-                <td>0.000000102</td>
-                <td>1 seconds ago</td>
-              </tr>
-
-              <tr>
-                <td><img src="./img/haunted-reels.png" alt="" /> <span class="d-none d-md-inline">&nbsp;sweet-bonanza-1000</span></td>
-                <td>CasinoKnight</td>
-                <td>WIN</td>
-                <td>0.02563</td>
-                <td>1 seconds ago</td>
-              </tr>
-
-              <tr>
-                <td><img src="./img/Hand-of-Anubis.png" alt="" /> <span class="d-none d-md-inline">&nbsp;haunted-reels</span></td>
-                <td>RoyalFlushRuler</td>
-                <td>WIN</td>
-                <td>&#8952;0.07</td>
-                <td>1 seconds ago</td>
-              </tr>
-
-              <tr>
-                <td><img src="./img/possessed.png" alt="" /> <span class="d-none d-md-inline">&nbsp;xxxtreme-lightning-roulette-live</span></td>
-                <td>BetMasterFlex</td>
-                <td>WIN</td>
-                <td>0.01</td>
-                <td>1 seconds ago</td>
-              </tr>
-
-              <tr>
-                <td><img src="./img/gates-of-olympus-1000.jpg" alt="" /> <span class="d-none d-md-inline">&nbsp;sugar-rush-1000-original</span></td>
-                <td>PokerAce88</td>
-                <td>WIN</td>
-                <td>0.000000097</td>
-                <td>1 minute ago</td>
-              </tr>
-
-              <tr>
-                <td><img src="./img/fruit-million-xmas.png" alt="" /> <span class="d-none d-md-inline">&nbsp;hot-fiesta</span></td>
-                <td>SpinKing777</td>
-                <td>WIN</td>
-                <td>0.035</td>
-                <td>1 minute ago</td>
-              </tr>
-
-              <tr>
-                <td><img src="./img/plinko-xy.jpg" alt="" /> <span class="d-none d-md-inline">&nbsp;Arinze Ubozoh</span></td>
-                <td>BlackjackBaller</td>
-                <td>WIN</td>
-                <td>0.07</td>
-                <td>1 minute ago</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-
-        <footer class="row row-cols-1 row-cols-md-4 mb-3 mt-5">
-          <div class="col text-white text-center">
-            <ul class="list-unstyled">
-              <li class="h3 fs-5">METAWIN</li>
-              <li>Copyright © 2024 MetaWin</li>
-              <li>Patent pending</li>
-            </ul>
-          </div>
-          <div class="col text-white text-center">
-            <ul class="list-unstyled">
-              <li class="h4 fs-5">About us</li>
-              <li>Privacy Policy</li>
-              <li>Cookie Policy</li>
-              <li>Terms and Conditions</li>
-              <li>Sports Terms and Conditions</li>
-            </ul>
-          </div>
-          <div class="col text-white text-center">
-            <ul class="list-unstyled">
-              <li class="h4 fs-5">Gaming</li>
-              <li>Underage Gaming Policy</li>
-              <li>Self-Exclusion Policy</li>
-              <li>Responsible Gambling</li>
-              <li>KYC Policy</li>
-            </ul>
-          </div>
-          <div class="col text-white text-center">
-            <ul class="list-unstyled">
-              <li class="h4 text-white">Join our Web3 community</li>
-              <li class="text-white"><i class="fab fa-discord fa-2x me-2"></i> <i class="fab fa-twitter fa-2x me-2"></i> <i class="fab fa-instagram fa-2x me-2"></i> <i class="fab fa-telegram fa-2x me-2"></i></li>
-            </ul>
-            <small
-              >Metawin.com is owned and operated by Asobi N.V. , ABRAHAM DE
-              VEERSTRAAT 9, WILLEMSTAD, CURACAO and is licensed and regulated by
-              the Government of the Autonomous Island of Anjouan, Union of
-              Comoros and operates under license No. ALSI-1523 12009-FI3.
-              Metawin.com has passed all regulatory compliance and is legally
-              authorized to conduct gaming operations for any and all games of
-              chance and wagering. (company number 153109). Zoom Net Services
-              Ltd, a company incorporated in Cyprus (Registration No.HE 410498),
-              provides payment services under an agreement with Asobi N.V.
-            </small>
-            <div class="d-flex justify-content-end">
-              <img class="h-50" src="./img/18+.png" alt="" />
-              <img style="width: 35px" src="./img/tick-twai.png" alt="" />
-            </div>
-          </div>
-        </footer>
-      </main>
-    </header>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+        </div>
+      </footer>
+    </main>
+    <script src="index.js"></script>
+    <script src="bootstrap-aid/js/bootstrap.min.js"></script>
   </body>
 </html>

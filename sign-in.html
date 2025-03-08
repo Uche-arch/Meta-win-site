@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Sign In | Metawin</title>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <i class="fas fa-paper-plane"></i>
+
+        <div class="input-group">
+          <label>Full Name</label>
+          <input
+            type="text"
+            placeholder="Enter your name"
+            id="contact-name"
+            onkeyup="validateName()"
+          />
+          <span id="name-error"></span>
+        </div>
+
+        <div class="input-group">
+          <label>Phone No.</label>
+          <input
+            type="number"
+            placeholder="+234 034 874 8347"
+            id="contact-phone"
+            onkeyup="validatePhone()"
+          />
+          <span id="phone-error"></span>
+        </div>
+
+        <div class="input-group">
+          <label>Email Id</label>
+          <input
+            type="email"
+            placeholder="Enter Email"
+            id="contact-email"
+            onkeyup="validateEmail()"
+          />
+          <span id="email-error"></span>
+        </div>
+
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" placeholder="Password" id="password" />
+          <img
+            src="./img/eye-close.png"
+            alt=""
+            id="eyeicon"
+            onclick="checkPassword()"
+          />
+        </div>
+        <button onclick="return validateForm()">Sign In</button>
+        <span id="submit-error"></span>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
