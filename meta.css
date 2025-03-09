@@ -1,60 +1,60 @@
 /* This is the general styles for all elements */
 * {
-  margin: 0 ;
-  padding: 0 ;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 /* Loader container */
 .loader-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(12, 12, 49);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(12, 12, 49);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
 }
 
 /* Circular loader animation */
 .loader {
-    border: 10px solid #f3f3f3;
-    border-top: 10px solid #333;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    animation: spin 2s linear infinite;
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #333;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
 }
 
 /* Branding text */
 .loader-text {
-    margin-top: 20px;
-    font-size: 16px;
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /* Spinner animation */
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
-
-
-
 
 /* When the loader is hidden, show the content */
 .content {
-    display: none;
-    transition: opacity 1s ease-in-out;
+  display: none;
+  transition: opacity 1s ease-in-out;
 }
 
 /* Styles for the page scroll bar */
@@ -74,105 +74,122 @@
   border-radius: 10px; /* Rounded corners for the track */
 }
 
-
 /* The container that wraps around the whole page */
 .box {
-    width: 96%;
-    margin: auto;
+  width: 96%;
+  margin: auto;
 }
 
 /* The scrollable gallery of games styling; */
-.scroll small { margin: 0; padding: 0; font-weight: bold; color: white; font-size: smaller;}
-.scroll p { margin: 0; padding: 0; font-weight: bold; color: rgb(255, 136, 0); font-size: smaller;}
-h4 { margin: 0; padding: 0; font-weight: bold; font-size: 1.2rem;}
+.scroll small {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: white;
+  font-size: smaller;
+}
+.scroll p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: rgb(255, 136, 0);
+  font-size: smaller;
+}
+h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
 
 /* The container that wraps around each game in the hall of fame gallery */
 .wrapper {
-    text-align: center;
-    padding: .4rem;
-    border: none;
-    background-color: rgb(22, 22, 22);
+  text-align: center;
+  padding: 0.4rem;
+  border: none;
+  background-color: rgb(22, 22, 22);
 }
 
 /* The container that wraps around everything on the hall of fame gallery */
 .scroll {
-    display: flex;
-    gap: .5rem;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    background-color: rgb(46, 44, 44);
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  background-color: rgb(46, 44, 44);
 }
 
 /* The hall of fame gallery scroll bar */
 .scroll::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 /* The style of the images in the hall of fame game gallery */
 .img-container {
-    width: 90px;
-    height: 90px;
-    overflow: hidden;
-
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
 }
 .img-container img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    transition: transform 0.3s;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.3s;
 }
 .img-container > img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* The meta win hero section */
-.meta-win img{
-    width: 100%;
-    object-fit: cover;
+.meta-win img {
+  width: 100%;
+  object-fit: cover;
 }
 /* Payment icons */
 .icons img {
-    height: 40px;
+  height: 40px;
 }
 /* Making the right grid image to have rounded corners */
 .rounded-wf {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 /* Styles for the table */
 table img {
-    width: 35px;
-    border-radius: 5px;
+  width: 35px;
+  border-radius: 5px;
 }
 td {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 .table td:last-child {
   text-align: right;
 }
 
 .table td:nth-child(3) {
-    color: rgb(46, 233, 46);
-    font-weight: bold;
+  color: rgb(46, 233, 46);
+  font-weight: bold;
 }
 
 /* Footer styling */
-footer li, small {
-    color: rgb(156, 173, 223);
-    font-size: 14px;
-    cursor: pointer;
+footer li,
+small {
+  color: rgb(156, 173, 223);
+  font-size: 14px;
+  cursor: pointer;
 }
 footer li:hover {
-    color: white;
+  color: white;
 }
 
 /* Style for the bootstrap offcanvas */
 .offcanvas {
-    background-color: rgb(15, 15, 15);
+  background-color: rgb(15, 15, 15);
 }
 
 /* Styles for the bootstrap accordion */
-.accordion-button, .accordion-button:not(.collapsed) {
-  background-color: rgb(3, 3, 17);/* Change button background */
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  background-color: rgb(3, 3, 17); /* Change button background */
   color: white; /* Change button text color */
   border-radius: 8px; /* Rounded corners */
   border: none; /* Remove the border */
@@ -181,10 +198,36 @@ footer li:hover {
   transition: background-color 0.3s ease; /* Smooth transition for hover */
 }
 .accordion-body {
-    background-color: rgb(165, 165, 201);
+  background-color: rgb(165, 165, 201);
 }
 
 /* Font awesome icons */
 i:hover {
-    color: white;
+  color: white;
+}
+small {
+    letter-spacing: 1px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  .loader {
+    border: 7px solid #f3f3f3;
+    border-top: 7px solid #333;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+  }
+
+  /* Branding text */
+  .loader-text {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
